@@ -1,6 +1,7 @@
-let books = require("../ddddddatadatatlllBoBoo/s BOOKS */
+let books = require("../data/books")
 
-
+               
+ /* Get All BOOKS */
 exports.getAllBooks = (req, res) => {
     res.json(books);
 };
