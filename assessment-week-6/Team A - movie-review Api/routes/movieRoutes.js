@@ -19,6 +19,6 @@ router.patch('/:id', movieController.partialUpdateMovie);
 router.delete('/:id', movieController.deleteMovie);
 
 //reviewRoutes
-router.get('/movieId/reviews', reviewController.getReviewsByMovie);
-router.post('/movieId/reviews', validateReview, reviewController.createReview);
+router.get('/:movieId/reviews', reviewController.getReviewsByMovie);
+router.post('/:movieId/reviews', validateReview, reviewController.createReview);
 module.exports = router;
