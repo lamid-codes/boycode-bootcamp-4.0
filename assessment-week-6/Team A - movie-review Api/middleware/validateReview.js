@@ -2,7 +2,7 @@ const movies = require('../data/movie');
 
 // Middleware to validate review payload and movie existence
 module.exports = (req, res, next) => {
-  const movieIdParam = req.params.movieId || req.params.id || req.params.movieId;
+  const movieIdParam = req.params.movieId || req.params.id;
   const movieId = movieIdParam ? parseInt(movieIdParam, 10) : undefined;
 
   // If route includes a movieId param, ensure movie exists
